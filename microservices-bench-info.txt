@@ -1,0 +1,19 @@
+services to run 
+ 1.service-registry port:8761
+ 2.config-server    port:9296
+ 3.gateway-service  port:9191
+ 4.account-service  port:9002
+ 5.customer-service port:9001
+
+customer service apis for given functionalities
+ 1. add customer   		 url : http://localhost:9191/customer/saveCustomer
+ 2. get customer details         url : http://localhost:9191/customer/getCustomer/{customerId}  
+ 3. get all customers            url : http://localhost:9191/customer/allCustomers
+ 4. update customer details      url : http://localhost:9191/customer/updateCustomer/{customerId}
+ 5. delete customer 		 url : http://localhost:9191/customer/deleteCustomer/{customerId}
+ 
+Account service apis 
+ 1.get account details           url: http://localhost:9191/account/accountDetails/{accountId}
+ 2. add money			 url: http://localhost:9191/account/addMoney
+ 3.withdraw money       	 url: http://localhost:9191/account/withdrawMoney
+ 4.delete account 		 url: http://localhost:9191/account/deleteAccount/{accountId}
